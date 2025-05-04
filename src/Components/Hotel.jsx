@@ -13,7 +13,7 @@ const Hotel = () => {
                   City/Hotel/Resort/Area
                 </p>
                 <div>
-                  <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                  <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                     Cox's Bazar
                   </h2>
                   <p className="text-black/90 text-sm font-light truncate">
@@ -25,7 +25,7 @@ const Hotel = () => {
                 <div className="space-y-1 border border-gray-300 py-2 pl-4 pr-6 rounded-2xl">
                   <p className="uppercase text-sm text-[#00026e]">Check In</p>
                   <div>
-                    <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                    <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                       19{" "}
                       <span className="font-normal text-sm md:text-base">
                         Apr'25
@@ -39,7 +39,7 @@ const Hotel = () => {
                 <div className="space-y-1 border border-gray-300 py-2 pl-4 pr-6 rounded-2xl">
                   <p className="uppercase text-sm text-[#00026e]">Check Out</p>
                   <div>
-                    <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                    <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                       20{" "}
                       <span className="font-normal text-sm md:text-base">
                         Apr'25
@@ -57,13 +57,13 @@ const Hotel = () => {
                 </p>
                 <div>
                   <div className="flex gap-0.5">
-                    <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                    <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                       1{" "}
                       <span className="font-normal text-sm md:text-base">
                         Room,
                       </span>
                     </h2>
-                    <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                    <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                       2{" "}
                       <span className="font-normal text-sm md:text-base">
                         Guests
@@ -121,7 +121,7 @@ const Hotel = () => {
           </div>
           <Link
             to="/hotel"
-            className="text-base md:text-lg text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-xl cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+            className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
           >
             Search Hotels
           </Link>
