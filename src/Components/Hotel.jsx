@@ -16,7 +16,7 @@ const Hotel = () => {
                   <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                     Cox's Bazar
                   </h2>
-                  <p className="text-black/90 text-sm font-light truncate">
+                  <p className="cpr text-sm font-light truncate">
                     Bangladesh
                   </p>
                 </div>
