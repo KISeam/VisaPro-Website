@@ -20,11 +20,11 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat lg:h-[35vw]"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      <div className="w-11/12 md:w-10/12 2xl:w-7/12 mx-auto">
-        <div className="flex items-center justify-center h-[800px] lg:h-[650px]">
+      <div className="w-11/12 md:w-10/12 2xl:w-9/12 mx-auto">
+        <div className="flex items-center justify-center h-[550px] ">
           <div className="bg-white rounded-2xl pt-16 md:pt-16 pb-12 px-4 md:px-7 relative w-full">
             <div className="bg-white rounded-full shadow-lg px-6 md:px-20 flex items-center justify-center gap-x-8 md:gap-x-12 absolute bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 py-2">
               {/* Visa Tab */}
@@ -65,7 +65,7 @@ const Hero = () => {
                 </svg>
                 <p
                   className={`text-sm font-medium ${
-                    activeTab === "visa" ? "text-[#00026e]" : "text-gray-600"
+                    activeTab === "visa" ? "csd" : "text-gray-600"
                   }`}
                 >
                   Visa
