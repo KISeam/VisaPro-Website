@@ -41,7 +41,7 @@ const MidDetails = () => {
             </div>
 
             {/* <div className="flex flex-col gap-6">
-              <h2 className="text-xl md:text-2xl font-semibold text-[#00026e]">
+              <h2 className="text-xl md:text-2xl font-semibold cpr">
                 Hot Deals
               </h2>
               <div className="flex gap-6 md:gap-10">
@@ -50,7 +50,7 @@ const MidDetails = () => {
             </div> */}
 
             <div className="flex flex-col gap-6">
-              <h2 className="text-xl md:text-2xl font-semibold text-[#00026e]">
+              <h2 className="text-xl md:text-2xl font-semibold cpr">
                 Special Offers
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6">

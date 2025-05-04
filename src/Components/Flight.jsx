@@ -36,9 +36,7 @@ const Flight = () => {
               </div>
               <p
                 className={`text-sm sm:text-lg md:text-xl font-semibold ${
-                  selectedOption === "one-way"
-                    ? "text-[#00026e]"
-                    : "text-gray-600"
+                  selectedOption === "one-way" ? "text-gray-500" : "text-gray-600"
                 }`}
               >
                 One Way
@@ -67,9 +65,7 @@ const Flight = () => {
               </div>
               <p
                 className={`text-sm sm:text-lg md:text-xl font-semibold ${
-                  selectedOption === "round-way"
-                    ? "text-[#00026e]"
-                    : "text-gray-600"
+                  selectedOption === "round-way" ? "text-gray-500" : "text-gray-600"
                 }`}
               >
                 Round Way
@@ -98,9 +94,7 @@ const Flight = () => {
               </div>
               <p
                 className={`text-sm sm:text-lg md:text-xl font-semibold ${
-                  selectedOption === "multi-city"
-                    ? "text-[#00026e]"
-                    : "text-gray-600"
+                  selectedOption === "multi-city" ? "text-gray-500" : "text-gray-600"
                 }`}
               >
                 Multi City
@@ -114,23 +108,23 @@ const Flight = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 w-full">
                   <div className="relative  grid grid-cols-2 gap-2.5">
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                      <p className="uppercase text-sm text-[#00026e]">From</p>
+                      <p className="uppercase text-sm text-gray-500">From</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold csd">
                           Dhaka
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           DAC, Hazrat Shahjalal International Airport
                         </p>
                       </div>
                     </div>
                     <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                      <p className="uppercase text-sm text-[#00026e]">To</p>
+                      <p className="uppercase text-sm text-gray-500">To</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold csd">
                           Cox's Bazar
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           CXB, Cox's Bazar Airport
                         </p>
                       </div>
@@ -142,44 +136,38 @@ const Flight = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-2.5">
                     <div className="border border-gray-300 rounded-2xl flex lg:col-span-7">
                       <div className="space-y-1 w-1/2 border-r border-gray-300 py-2 pl-4 pr-6">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Journey Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Journey Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold csd">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
                             </span>
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Monday
                           </p>
                         </div>
                       </div>
                       <div className="space-y-3 w-1/2 py-2 pl-4 pr-6 ">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Return Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Return Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             <span className="font-normal text-sm md:text-base"></span>
                           </h2>
-                          <p className="text-black/90 text-xs font-light">
+                          <p className="cpr text-xs font-light">
                             Save more on return flight
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1 lg:col-span-5">
-                      <p className="uppercase text-sm text-[#00026e]">
-                        Traveler, Class
-                      </p>
+                      <p className="uppercase text-sm text-gray-500">Traveler, Class</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold csd">
                           1 Traveler
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           Economy
                         </p>
                       </div>
@@ -191,23 +179,23 @@ const Flight = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 w-full">
                   <div className="relative grid grid-cols-2 gap-2.5">
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                      <p className="uppercase text-sm text-[#00026e]">From</p>
+                      <p className="uppercase text-sm text-gray-500">From</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                           Dhaka
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           DAC, Hazrat Shahjalal International Airport
                         </p>
                       </div>
                     </div>
                     <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                      <p className="uppercase text-sm text-[#00026e]">To</p>
+                      <p className="uppercase text-sm text-gray-500">To</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                           Cox's Bazar
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           CXB, Cox's Bazar Airport
                         </p>
                       </div>
@@ -219,47 +207,41 @@ const Flight = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-2.5">
                     <div className="border border-gray-300 rounded-2xl flex lg:col-span-7">
                       <div className="space-y-1 w-1/2 border-r border-gray-300 py-2 pl-4 pr-6 ">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Journey Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Journey Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
                             </span>
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Monday
                           </p>
                         </div>
                       </div>
                       <div className="space-y-1 w-1/2 py-2 pl-4 pr-6">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Return Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Return Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             25{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
                             </span>
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Friday
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1 lg:col-span-5">
-                      <p className="uppercase text-sm text-[#00026e]">
-                        Traveler, Class
-                      </p>
+                      <p className="uppercase text-sm text-gray-500">Traveler, Class</p>
                       <div>
-                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                           1 Traveler
                         </h2>
-                        <p className="text-black/90 text-sm font-light truncate">
+                        <p className="cpr text-sm font-light truncate">
                           Economy
                         </p>
                       </div>
@@ -272,23 +254,23 @@ const Flight = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 w-full">
                     <div className="grid grid-cols-2 gap-2.5">
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">From</p>
+                        <p className="uppercase text-sm text-gray-500">From</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             Dhaka
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             DAC, Hazrat Shahjalal International Airport
                           </p>
                         </div>
                       </div>
                       <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">To</p>
+                        <p className="uppercase text-sm text-gray-500">To</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             Cox's Bazar
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             CXB, Cox's Bazar Airport
                           </p>
                         </div>
@@ -296,30 +278,26 @@ const Flight = () => {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
                       <div className="border border-gray-300 rounded-2xl space-y-1 py-2 pl-4 pr-6">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Journey Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Journey Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
                             </span>
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Monday
                           </p>
                         </div>
                       </div>
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Traveler, Class
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Traveler, Class</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             1 Traveler
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Economy
                           </p>
                         </div>
@@ -330,23 +308,23 @@ const Flight = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 w-full">
                     <div className="grid grid-cols-2 gap-2.5">
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">From</p>
+                        <p className="uppercase text-sm text-gray-500">From</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             Select a city
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Click to choose an airport
                           </p>
                         </div>
                       </div>
                       <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">To</p>
+                        <p className="uppercase text-sm text-gray-500">To</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             Select a city
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Click to choose an airport
                           </p>
                         </div>
@@ -354,28 +332,24 @@ const Flight = () => {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
                       <div className="border border-gray-300 rounded-2xl space-y-1 py-2 pl-4 pr-6">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Journey Date
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Journey Date</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             {" "}
                             <span className="font-normal text-sm md:text-base"></span>
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Pick a date
                           </p>
                         </div>
                       </div>
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
-                        <p className="uppercase text-sm text-[#00026e]">
-                          Traveler, Class
-                        </p>
+                        <p className="uppercase text-sm text-gray-500">Traveler, Class</p>
                         <div>
-                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-gray-500">
                             1 Traveler
                           </h2>
-                          <p className="text-black/90 text-sm font-light truncate">
+                          <p className="cpr text-sm font-light truncate">
                             Economy
                           </p>
                         </div>
@@ -386,7 +360,7 @@ const Flight = () => {
               )}
               <Link
                 to="/flight"
-                className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+                className="text-lg md:text-xl text-whte py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
               >
                 Search Flights
               </Link>

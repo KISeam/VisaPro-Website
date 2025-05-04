@@ -30,7 +30,7 @@ const Hero = () => {
               {/* Visa Tab */}
               <div
                 className={`flex flex-col md:flex-row gap-2.5 items-center cursor-pointer py-4 ${
-                  activeTab === "visa" ? "border-b-2 border-[#fdcc02]" : ""
+                  activeTab === "visa" ? "border-b-2 border-[#EF8C2C]" : ""
                 }`}
                 onClick={() => handleTabChange("visa")}
               >
@@ -75,7 +75,7 @@ const Hero = () => {
               {/* Hotel Tab */}
               <div
                 className={`flex flex-col md:flex-row gap-2.5 items-center cursor-pointer py-4 ${
-                  activeTab === "hotel" ? "border-b-2 border-[#fdcc02]" : ""
+                  activeTab === "hotel" ? "border-b-2 border-[#EF8C2C]" : ""
                 }`}
                 onClick={() => handleTabChange("hotel")}
               >
@@ -148,7 +148,7 @@ const Hero = () => {
                 </svg>
                 <p
                   className={`text-sm font-medium ${
-                    activeTab === "hotel" ? "text-[#00026e]" : "text-gray-600"
+                    activeTab === "hotel" ? "cpr" : "text-gray-600"
                   }`}
                 >
                   Hotel
@@ -158,7 +158,7 @@ const Hero = () => {
               {/* Flight Tab */}
               <div
                 className={`flex flex-col md:flex-row gap-2.5 items-center cursor-pointer py-4 ${
-                  activeTab === "flight" ? "border-b-2 border-[#fdcc02]" : ""
+                  activeTab === "flight" ? "border-b-2 border-[#EF8C2C]" : ""
                 }`}
                 onClick={() => handleTabChange("flight")}
               >
@@ -209,7 +209,7 @@ const Hero = () => {
                 </svg>
                 <p
                   className={`text-sm font-medium ${
-                    activeTab === "flight" ? "text-[#00026e]" : "text-gray-600"
+                    activeTab === "flight" ? "cpr" : "text-gray-600"
                   }`}
                 >
                   Flight
@@ -219,7 +219,7 @@ const Hero = () => {
               {/* Tour Tab */}
               <div
                 className={`flex flex-col md:flex-row gap-2.5 items-center cursor-pointer py-4 ${
-                  activeTab === "tour" ? "border-b-2 border-[#fdcc02]" : ""
+                  activeTab === "tour" ? "border-b-2 border-[#EF8C2C]" : ""
                 }`}
                 onClick={() => handleTabChange("tour")}
               >
@@ -298,7 +298,7 @@ const Hero = () => {
                 </svg>
                 <p
                   className={`text-sm font-medium ${
-                    activeTab === "tour" ? "text-[#00026e]" : "text-gray-600"
+                    activeTab === "tour" ? "cpr" : "text-gray-600"
                   }`}
                 >
                   Tour

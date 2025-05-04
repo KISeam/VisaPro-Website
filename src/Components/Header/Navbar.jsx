@@ -16,7 +16,7 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="sticky bg-white shadow-lg w-full top-0 z-50 transition-all duration-300">
-      <div className="w-11/12 md:w-9/12 container  mx-auto">
+      <div className="w-11/12 md:w-9/12 container mx-auto">
         <div className="flex justify-between items-center py-4">
           <NavLink to="/" className="w-30 md:w-36 lg:w-40">
             <img src={logo} alt="Logo" className="w-full h-full" />
@@ -31,7 +31,7 @@ const Navbar = () => {
                   to={item.path}
                   className={({ isActive }) =>
                     `flex flex-col items-center cursor-pointer py-1.5 md:py-3 w-full ${
-                      isActive ? "border-b-2 border-[#fdcc02]" : ""
+                      isActive ? "border-b-2 border-[#EF8C2C]" : ""
                     }`
                   }
                 >
