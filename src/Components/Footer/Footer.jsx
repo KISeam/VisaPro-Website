@@ -66,24 +66,24 @@ const Footer = () => {
                 </h3>
                 <div className="flex flex-col gap-8">
                   <div className="space-y-3">
-                    <p className="text-white text-sm">info@gozayaan.com</p>
+                    <p className="text-white text-sm">info@visapro.com</p>
                     <p className="text-white text-sm">+88 09678 332211</p>
                   </div>
                   <div className="flex gap-4">
                     <Link
-                      to="https://www.facebook.com/GoZayaanBD"
+                      to=""
                       className="flex items-center justify-center p-3 bg-[#33358B] rounded-full cursor-pointer text-white"
                     >
                       <FaFacebookF className="text-lg" />
                     </Link>
                     <Link
-                      to="https://www.youtube.com/channel/UCPcc3SEA1Ig3QMqNaW91-Ng"
+                      to=""
                       className="flex items-center justify-center p-3 bg-[#33358B] rounded-full cursor-pointer text-white"
                     >
                       <FaYoutube className="text-lg" />
                     </Link>
                     <Link
-                      to="https://www.instagram.com/gozayaan/"
+                      to=""
                       className="flex items-center justify-center p-3 bg-[#33358B] rounded-full cursor-pointer text-white"
                     >
                       <FaInstagram className="text-lg" />
@@ -96,7 +96,7 @@ const Footer = () => {
               <Link to="/" className="w-30 md:w-36 lg:w-40">
                 <img src={logo} alt="Logo" className="w-full h-full" />
               </Link>
-              <p className="text-sm">&copy; Copyright GoZayaan Ltd. </p>
+              <p className="text-sm">&copy; Copyright Visa Pro  </p>
             </div>
           </div>
         </div>
