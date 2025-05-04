@@ -28,9 +28,13 @@ const MidDetails = () => {
             </div>
 
             <div>
-              <img className="rounded-xl hidden md:block" src={menImg} alt="" />
               <img
-                className="rounded-xl md:hidden block"
+                className="rounded-full hidden md:block"
+                src={menImg}
+                alt=""
+              />
+              <img
+                className="rounded-full md:hidden block"
                 src={menImg2}
                 alt=""
               />
@@ -69,12 +73,12 @@ const MidDetails = () => {
 
             <div>
               <img
-                className="rounded-xl hidden md:block"
+                className="rounded-full hidden md:block"
                 src={graminImg}
                 alt=""
               />
               <img
-                className="rounded-xl md:hidden block"
+                className="rounded-full md:hidden block"
                 src={graminImg2}
                 alt=""
               />

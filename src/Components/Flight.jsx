@@ -35,7 +35,7 @@ const Flight = () => {
                 )}
               </div>
               <p
-                className={`text-sm sm:text-base md:text-lg font-semibold ${
+                className={`text-sm sm:text-lg md:text-xl font-semibold ${
                   selectedOption === "one-way"
                     ? "text-[#00026e]"
                     : "text-gray-600"
@@ -66,7 +66,7 @@ const Flight = () => {
                 )}
               </div>
               <p
-                className={`text-sm sm:text-base md:text-lg font-semibold ${
+                className={`text-sm sm:text-lg md:text-xl font-semibold ${
                   selectedOption === "round-way"
                     ? "text-[#00026e]"
                     : "text-gray-600"
@@ -97,7 +97,7 @@ const Flight = () => {
                 )}
               </div>
               <p
-                className={`text-sm sm:text-base md:text-lg font-semibold ${
+                className={`text-sm sm:text-lg md:text-xl font-semibold ${
                   selectedOption === "multi-city"
                     ? "text-[#00026e]"
                     : "text-gray-600"
@@ -116,7 +116,7 @@ const Flight = () => {
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
                       <p className="uppercase text-sm text-[#00026e]">From</p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           Dhaka
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -127,7 +127,7 @@ const Flight = () => {
                     <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
                       <p className="uppercase text-sm text-[#00026e]">To</p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           Cox's Bazar
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -135,7 +135,7 @@ const Flight = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-white cursor-pointer rounded-full p-4 border border-gray-200 text-gray-400 text-base md:text-lg absolute left-1/2 -translate-x-1/2 translate-y-1/2">
+                    <div className="bg-white cursor-pointer rounded-full p-4 border border-gray-200 text-gray-400 text-lg md:text-xl absolute left-1/2 -translate-x-1/2 translate-y-1/2">
                       <FaArrowRightArrowLeft />
                     </div>
                   </div>
@@ -146,7 +146,7 @@ const Flight = () => {
                           Journey Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
@@ -162,7 +162,7 @@ const Flight = () => {
                           Return Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             <span className="font-normal text-sm md:text-base"></span>
                           </h2>
                           <p className="text-black/90 text-xs font-light">
@@ -176,7 +176,7 @@ const Flight = () => {
                         Traveler, Class
                       </p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           1 Traveler
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -193,7 +193,7 @@ const Flight = () => {
                     <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
                       <p className="uppercase text-sm text-[#00026e]">From</p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           Dhaka
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -204,7 +204,7 @@ const Flight = () => {
                     <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
                       <p className="uppercase text-sm text-[#00026e]">To</p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           Cox's Bazar
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -212,7 +212,7 @@ const Flight = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-white cursor-pointer rounded-full p-4 border border-gray-200 text-gray-400 text-base md:text-lg absolute left-1/2 ] -translate-x-1/2 translate-y-1/2">
+                    <div className="bg-white cursor-pointer rounded-full p-4 border border-gray-200 text-gray-400 text-lg md:text-xl absolute left-1/2 ] -translate-x-1/2 translate-y-1/2">
                       <FaArrowRightArrowLeft />
                     </div>
                   </div>
@@ -223,7 +223,7 @@ const Flight = () => {
                           Journey Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
@@ -239,7 +239,7 @@ const Flight = () => {
                           Return Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             25{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
@@ -256,7 +256,7 @@ const Flight = () => {
                         Traveler, Class
                       </p>
                       <div>
-                        <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                        <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                           1 Traveler
                         </h2>
                         <p className="text-black/90 text-sm font-light truncate">
@@ -274,7 +274,7 @@ const Flight = () => {
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
                         <p className="uppercase text-sm text-[#00026e]">From</p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             Dhaka
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -285,7 +285,7 @@ const Flight = () => {
                       <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
                         <p className="uppercase text-sm text-[#00026e]">To</p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             Cox's Bazar
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -300,7 +300,7 @@ const Flight = () => {
                           Journey Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             21{" "}
                             <span className="font-normal text-sm md:text-base">
                               Apr'25
@@ -316,7 +316,7 @@ const Flight = () => {
                           Traveler, Class
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             1 Traveler
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -332,7 +332,7 @@ const Flight = () => {
                       <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
                         <p className="uppercase text-sm text-[#00026e]">From</p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             Select a city
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -343,7 +343,7 @@ const Flight = () => {
                       <div className="py-2 pl-6 pr-6 border border-gray-300 rounded-2xl space-y-1">
                         <p className="uppercase text-sm text-[#00026e]">To</p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             Select a city
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -358,7 +358,7 @@ const Flight = () => {
                           Journey Date
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             {" "}
                             <span className="font-normal text-sm md:text-base"></span>
                           </h2>
@@ -372,7 +372,7 @@ const Flight = () => {
                           Traveler, Class
                         </p>
                         <div>
-                          <h2 className="text-base md:text-lg font-semibold text-[#00026e]">
+                          <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
                             1 Traveler
                           </h2>
                           <p className="text-black/90 text-sm font-light truncate">
@@ -386,7 +386,7 @@ const Flight = () => {
               )}
               <Link
                 to="/flight"
-                className="text-base md:text-lg text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-xl cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+                className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
               >
                 Search Flights
               </Link>
