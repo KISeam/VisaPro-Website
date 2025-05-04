@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Visa = () => {
+  const location = useLocation();
+  const isVisaPage = location.pathname === "/visa";
+
   return (
     <>
       <div>
@@ -13,7 +16,7 @@ const Visa = () => {
                 Bangladesh
               </h2>
               <p className="uppercase text-sm text-[#00026e]">Country</p>
-            </div>
+              </div>
             <div className="py-2 pl-4 pr-6 border border-gray-300 rounded-2xl space-y-1">
               <p className="text-sm text-gray-500">Travelling to</p>
               <h2 className="text-lg md:text-xl font-semibold text-[#00026e]">
@@ -29,12 +32,22 @@ const Visa = () => {
               <p className="uppercase text-sm text-[#00026e]">Type</p>
             </div>
           </div>
-          <Link
-            to="/visa"
-            className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
-          >
-            Search Visa
-          </Link>
+          {isVisaPage && (
+            <Link
+              to="/visa"
+              className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/3 text-nowrap"
+            >
+              Modify Search
+            </Link>
+          )}
+          {!isVisaPage && (
+            <Link
+              to="/visa"
+              className="text-lg md:text-xl text-[#00026e] py-3 px-10 bg-[#fdcc02] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+            >
+              Search Visa
+            </Link>
+          )}
         </div>
       </div>
     </>

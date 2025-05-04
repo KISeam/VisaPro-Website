@@ -5,6 +5,10 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Root/Root.jsx";
 import Home from "./Pages/Home/Home.jsx";
+import VisaPage from "./Pages/Visa/VisaPage.jsx";
+import HotelPage from "./Pages/Hotel/HotelPage.jsx";
+import TourPage from "./Pages/Tour/TourPage.jsx";
+import FlightPage from "./Pages/Flight/FlightPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,20 +20,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/flight",
-        element: <h1>Flight</h1>,
+        path: "/visa",
+        element: <VisaPage />,
       },
       {
         path: "/hotel",
-        element: <h1>Hotel</h1>,
+        element: <HotelPage />,
       },
       {
         path: "/tour",
-        element: <h1>Tour</h1>,
+        element: <TourPage />,
       },
       {
-        path: "/visa",
-        element: <h1>Visa</h1>,
+        path: "/flight",
+        element: <FlightPage />,
       },
     ],
   },
