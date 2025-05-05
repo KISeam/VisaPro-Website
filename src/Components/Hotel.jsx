@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Hotel = () => {
+  const location = useLocation();
+  const isVisaPage = location.pathname === "/hotel";
+
   return (
     <>
       <div>
@@ -29,9 +32,7 @@ const Hotel = () => {
                         Apr'25
                       </span>
                     </h2>
-                    <p className="cpr text-sm font-light truncate">
-                      Saturday
-                    </p>
+                    <p className="cpr text-sm font-light truncate">Saturday</p>
                   </div>
                 </div>
                 <div className="space-y-1 border border-gray-300 py-2 pl-4 pr-6 rounded-2xl">
@@ -43,9 +44,7 @@ const Hotel = () => {
                         Apr'25
                       </span>
                     </h2>
-                    <p className="cpr text-sm font-light truncate">
-                      Sunday
-                    </p>
+                    <p className="cpr text-sm font-light truncate">Sunday</p>
                   </div>
                 </div>
               </div>
@@ -68,16 +67,12 @@ const Hotel = () => {
                       </span>
                     </h2>
                   </div>
-                  <p className="cpr text-sm font-light truncate">
-                    Monday
-                  </p>
+                  <p className="cpr text-sm font-light truncate">Monday</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-4">
-              <p className="text-base font-medium csd">
-                Search for:
-              </p>
+              <p className="text-base font-medium csd">Search for:</p>
 
               {["Business", "Couples", "Families", "Friends", "Solo"].map(
                 (option) => (
@@ -117,12 +112,22 @@ const Hotel = () => {
               )}
             </div>
           </div>
-          <Link
-            to="/hotel"
-            className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
-          >
-            Search Hotels
-          </Link>
+          {isVisaPage && (
+            <Link
+              to="/hotel"
+              className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/3 text-nowrap"
+            >
+              Modify Search
+            </Link>
+          )}
+          {!isVisaPage && (
+            <Link
+              to="/hotel"
+              className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+            >
+              Search Hotels
+            </Link>
+          )}
         </div>
       </div>
     </>
