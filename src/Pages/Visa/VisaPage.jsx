@@ -4,7 +4,7 @@ import Visa from "../../Components/Visa";
 const VisaPage = () => {
   return (
     <div className="bg-gray-200 pb-14 pt-6">
-      <div className="w-11/12 md:w-9/12 container mx-auto">
+      <div className="max-w-7xl container mx-auto">
         <div className="space-y-14">
           <div className="bg-white pt-6 py-10 px-4 rounded-xl">
             <Visa />
