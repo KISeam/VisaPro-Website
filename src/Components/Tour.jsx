@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Tour = () => {
+  const location = useLocation();
+  const isVisaPage = location.pathname === "/tour";
+
   return (
     <>
       <div>
@@ -12,12 +15,22 @@ const Tour = () => {
               Cox's Bazar
             </h2>
           </div>
-          <Link
-            to="/tour"
-            className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
-          >
-            Search Tours
-          </Link>
+          {isVisaPage && (
+            <Link
+              to="/tour"
+              className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/3 text-nowrap"
+            >
+              Modify Search
+            </Link>
+          )}
+          {!isVisaPage && (
+            <Link
+              to="/tour"
+              className="text-lg md:text-xl text-white py-3 px-10 bg-[#EF8C2C] rounded-full cursor-pointer font-semibold absolute left-1/2 -translate-x-1/2 translate-y-1/2 text-nowrap"
+            >
+              Search Tours
+            </Link>
+          )}
         </div>
       </div>
     </>
