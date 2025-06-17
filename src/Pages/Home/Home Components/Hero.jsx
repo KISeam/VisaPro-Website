@@ -24,9 +24,9 @@ const Hero = () => {
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="w-11/12 md:w-10/12 2xl:w-9/12 mx-auto">
-        <div className="flex items-center justify-center h-[550px] ">
+        <div className="flex items-center justify-center h-[70vh] lg:h-[35vw]">
           <div className="bg-white rounded-2xl pt-16 md:pt-16 pb-12 px-4 md:px-7 relative w-full">
-            <div className="bg-white rounded-full shadow-lg px-6 md:px-20 flex items-center justify-center gap-x-8 md:gap-x-12 absolute bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 py-2">
+            <div className="bg-white rounded-4xl md:rounded-full shadow-lg px-6 md:px-20 flex items-center justify-center gap-x-8 md:gap-x-12 absolute bottom-full left-1/2 -translate-x-1/2 translate-y-1/2 py-2">
               {/* Visa Tab */}
               <div
                 className={`flex flex-col md:flex-row gap-2.5 items-center cursor-pointer py-4 ${
