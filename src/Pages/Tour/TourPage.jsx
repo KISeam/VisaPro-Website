@@ -68,8 +68,12 @@ const Sidebar = ({ onFilter }) => {
     onFilter({ destination, minPrice, maxPrice: value });
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg sticky top-6 h-fit">
+    <div className="bg-white p-6 rounded-xl shadow-lg sticky top-26 h-fit">
       <h2 className="text-2xl font-bold mb-4 text-gray-800">Filters</h2>
       <button
         onClick={handleReset}
@@ -95,14 +99,12 @@ const Sidebar = ({ onFilter }) => {
             });
           }}
           placeholder="Enter destination"
-          className="border border-gray-300 rounded w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg"
+          className="border border-gray-300 text-gray-500 rounded w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg"
         />
       </div>
 
       <div>
-        <label className="block text-lg font-medium text-gray-700 mb-2">
-          Price Range
-        </label>
+        <label className="block text-lg font-medium text-gray-700 mb-2">Price Range</label>
         <div className="flex justify-between text-gray-500 mb-2">
           <span className="text-base">BDT 12,400</span>
           <span className="text-base">{maxPrice.toLocaleString()}</span>
@@ -116,10 +118,10 @@ const Sidebar = ({ onFilter }) => {
           onChange={handleMaxPriceChange}
         />
         <div className="flex justify-between mt-4">
-          <div className="border rounded-lg p-2 text-base w-20 text-center border-gray-400">
+          <div className="border rounded-lg p-2 text-base w-20 text-center text-gray-600 border-gray-400">
             12.4k
           </div>
-          <div className="border rounded-lg p-2 text-base w-20 text-center border-gray-400">
+          <div className="border rounded-lg p-2 text-base w-20 text-center text-gray-600 border-gray-400">
             {Math.round(maxPrice / 1000)}k
           </div>
         </div>
@@ -183,28 +185,27 @@ const TourPage = () => {
       result = result.filter((tour) => tour.price >= minPrice && tour.price <= maxPrice);
     }
 
-    setFilteredTours(result);
-  };
-
-  useEffect(() => {
-    let sortedTours = [...filteredTours];
-
+    // Apply sorting directly here
     switch (sortOption) {
       case "price-low-to-high":
-        sortedTours.sort((a, b) => a.price - b.price);
+        result.sort((a, b) => a.price - b.price);
         break;
       case "price-high-to-low":
-        sortedTours.sort((a, b) => b.price - a.price);
+        result.sort((a, b) => b.price - a.price);
         break;
       case "rating-high-to-low":
-        sortedTours.sort((a, b) => b.rating - a.rating);
+        result.sort((a, b) => b.rating - a.rating);
         break;
       default:
         break;
     }
 
-    setFilteredTours(sortedTours);
-  }, [sortOption, filteredTours]);
+    setFilteredTours(result);
+  };
+
+  useEffect(() => {
+    applyFilters({ destination: "", minPrice: 0, maxPrice: 25130 });
+  }, [sortOption]);
 
   return (
     <div className="bg-gray-100 min-h-screen py-4 md:py-8">
@@ -220,12 +221,21 @@ const TourPage = () => {
                 <Sidebar onFilter={applyFilters} />
               </div>
               <div className="w-full lg:w-2/3">
-                <div className="flex justify-between items-center mb-6 bg-white p-6 rounded-xl">
+                <div className="flex flex-col md:flex-row justify-between items-center mb-6 bg-white p-6 rounded-xl gap-4">
                   <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
                     Showing{" "}
-                    <span className="text-[#3590CF]">{filteredTours.length}</span>{" "}
-                    Tours
+                    <span className="text-[#3590CF]">{filteredTours.length}</span> Tours
                   </h2>
+                  <select
+                    value={sortOption}
+                    onChange={(e) => setSortOption(e.target.value)}
+                    className="border border-gray-300 rounded-lg p-2 text-base text-gray-700"
+                  >
+                    <option value="popularity">Sort by: Popularity</option>
+                    <option value="price-low-to-high">Price: Low to High</option>
+                    <option value="price-high-to-low">Price: High to Low</option>
+                    <option value="rating-high-to-low">Rating: High to Low</option>
+                  </select>
                 </div>
                 <TourList tours={filteredTours} />
               </div>

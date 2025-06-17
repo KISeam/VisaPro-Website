@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import {
   FiSearch,
   FiMapPin,
@@ -105,7 +105,7 @@ const HotelPage = () => {
       duration: 5,
       price: 22500,
       image:
-        "https://images.unsplash.com/photo-1528214133056-4f3d0ab0de7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/bd/b4/59/sofitel-krabi-phokeethra.jpg?w=1200&h=-1&s=1",
       rating: 4.9,
       reviews: 278,
       amenities: ["Private Beach", "Infinity Pool", "Spa", "Water Sports"],
@@ -191,6 +191,10 @@ const HotelPage = () => {
     setSortBy("recommended");
     setCurrentPage(1);
   };
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [])
 
   return (
     <div className="bg-gray-200 min-h-screen py-4 md:py-8">

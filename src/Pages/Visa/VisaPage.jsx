@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Visa from "../../Components/Visa";
 
 const VisaPage = () => {
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div className="bg-gray-200 pb-14 pt-6">
       <div className="max-w-7xl container mx-auto">

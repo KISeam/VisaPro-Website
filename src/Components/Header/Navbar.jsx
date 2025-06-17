@@ -1,16 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/Images/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import Button from "../Button";
 
-// ✅ Step 1: Create nav items
 const navItems = [
   { path: "/", label: "Home" },
-  { path: "/hotel", label: "Destination" },
-  { path: "/tour", label: "Package" },
-  { path: "/flight", label: "Promo" },
-  { path: "/flight", label: "About" },
+  { path: "/visa", label: "Visa" },
+  { path: "/hotel", label: "Hotel" },
+  { path: "/tour", label: "Tour" },
+  { path: "/flight", label: "Flight" },
 ];
 
 const Navbar = () => {
@@ -22,34 +21,7 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="w-full h-full" />
           </NavLink>
 
-          {/* ✅ Mobile Menu */}
-          <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg z-40 py-2 md:py-4">
-            <div className="flex justify-around items-center">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `flex flex-col items-center cursor-pointer py-1.5 md:py-3 w-full ${
-                      isActive ? "border-b-2 border-[#EF8C2C]" : ""
-                    }`
-                  }
-                >
-                  {({ isActive }) => (
-                    <p
-                      className={`text-sm font-medium ${
-                        isActive ? "csd" : "text-gray-600"
-                      }`}
-                    >
-                      {item.label}
-                    </p>
-                  )}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-
-          {/* ✅ Desktop Menu */}
+          {/* Desktop Menu - Moved outside of mobile menu container */}
           <div className="hidden lg:block">
             <div className="flex items-center justify-center">
               {navItems.map((item) => (
@@ -91,6 +63,33 @@ const Navbar = () => {
             </div>
             <Button text={"Sign in"} />
           </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu - Separated from main nav container */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg z-40 py-2 md:py-4">
+        <div className="flex justify-around items-center">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              className={({ isActive }) =>
+                `flex flex-col items-center cursor-pointer py-1.5 md:py-3 w-full ${
+                  isActive ? "border-b-2 border-[#EF8C2C]" : ""
+                }`
+              }
+            >
+              {({ isActive }) => (
+                <p
+                  className={`text-sm font-medium ${
+                    isActive ? "csd" : "text-gray-600"
+                  }`}
+                >
+                  {item.label}
+                </p>
+              )}
+            </NavLink>
+          ))}
         </div>
       </div>
     </div>
